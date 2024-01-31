@@ -11,12 +11,14 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: const HomeAppBar(),
       body: GestureDetector(
-        behavior: HitTestBehavior.translucent,
+        behavior: HitTestBehavior.opaque,
         onTap: () {
+          // Unfocus the primary focus when the body is tapped
           FocusManager.instance.primaryFocus?.unfocus();
         },
         child: IgnorePointer(
-          ignoring: FocusManager.instance.primaryFocus != null,
+          // Ignore pointer events when primary focus has focus
+          ignoring: FocusManager.instance.primaryFocus?.hasFocus ?? false,
           child: const HomePageBody(),
         ),
       ),
