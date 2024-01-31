@@ -15,7 +15,7 @@ class NewBookListTile extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 5),
         child: Row(
           children: [
             CoverImage(url: book.coverUrl, width: 75, height: 100),

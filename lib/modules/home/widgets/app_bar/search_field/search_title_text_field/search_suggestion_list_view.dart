@@ -9,6 +9,7 @@ class SearchSuggestionListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      shrinkWrap: true,
       itemCount: children.length,
       itemBuilder: (context, index) => children[index],
       separatorBuilder: (context, index) => const BaseDivider(

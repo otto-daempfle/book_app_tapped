@@ -11,9 +11,15 @@ class HomePageBody extends StatelessWidget {
     return const CustomScrollView(
       cacheExtent: 500,
       slivers: [
-        SliverSeactionHeader(title: 'Continue'),
+        SliverSeactionHeader(
+          title: 'Continue',
+          bottomPadding: 15,
+        ),
         ContinueSectionSliver(),
-        SliverSeactionHeader(title: 'New'),
+        SliverSeactionHeader(
+          title: 'New',
+          bottomPadding: 0,
+        ),
         NewSectionSliver(),
       ],
     );

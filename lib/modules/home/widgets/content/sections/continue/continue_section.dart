@@ -15,39 +15,39 @@ class ContinueSectionSliver extends ConsumerWidget {
     return SliverToBoxAdapter(
       child: SizedBox(
         height: 150,
-        child: continueBooks.when(
-          data: (books) {
-            //Empty View
-            if (books.isEmpty) {
-              return Center(
-                child: Text(
+        child: Center(
+          child: continueBooks.when(
+            data: (books) {
+              //Empty View
+              if (books.isEmpty) {
+                return Text(
                   'Noch kein Buch gelesen',
                   style: Theme.of(context).textTheme.bodyLarge,
-                ),
-              );
-            }
-
-            return ListView.builder(
-              padding: const EdgeInsets.only(left: 20),
-              itemCount: books.length,
-              shrinkWrap: true,
-              scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) {
-                return ContinueBookCard(
-                  book: books[index],
-                  onTap: () {
-                    HapticFeedback.mediumImpact();
-                    showSnackBar(
-                      context,
-                      'On Continue ${books[index].title} tapped',
-                    );
-                  },
                 );
-              },
-            );
-          },
-          error: (e, s) => Center(child: Text(e.toString())),
-          loading: () => const BaseLoadingIndicator(),
+              }
+
+              return ListView.builder(
+                padding: const EdgeInsets.only(left: 20),
+                itemCount: books.length,
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return ContinueBookCard(
+                    book: books[index],
+                    onTap: () {
+                      HapticFeedback.mediumImpact();
+                      showSnackBar(
+                        context,
+                        'On Continue ${books[index].title} tapped',
+                      );
+                    },
+                  );
+                },
+              );
+            },
+            error: (e, s) => Text(e.toString()),
+            loading: () => const BaseLoadingIndicator(),
+          ),
         ),
       ),
     );

@@ -37,7 +37,7 @@ class NewSectionSliver extends ConsumerWidget {
             );
           },
           separatorBuilder: (context, index) => const BaseDivider(
-            height: 1,
+            height: 10,
           ),
         );
       },

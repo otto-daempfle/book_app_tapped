@@ -70,7 +70,7 @@ TextTheme get darkTextTheme {
     bodyMedium: TextStyle(
       fontSize: 12,
       fontWeight: FontWeight.w400,
-      color: Color.fromRGBO(167, 204, 193, 1),
+      color: Color.fromRGBO(185, 198, 194, 1),
     ),
     bodySmall: TextStyle(
       fontSize: 12,

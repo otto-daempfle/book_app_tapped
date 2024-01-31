@@ -37,8 +37,6 @@ class SearchTitleTextField extends ConsumerWidget {
       hideOnEmpty: searchText.isEmpty,
       hideOnUnfocus: true,
       offset: Offset.zero,
-      constraints:
-          BoxConstraints(maxHeight: MediaQuery.of(context).size.height / 2),
       builder: ((context, controller, focusNode) =>
           SearchTextField(controller: controller, focusNode: focusNode)),
       itemBuilder: (context, book) => BookSuggestionListTile(book: book),
