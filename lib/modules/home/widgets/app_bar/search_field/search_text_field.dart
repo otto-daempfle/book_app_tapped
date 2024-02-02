@@ -26,7 +26,7 @@ class SearchTextField extends StatelessWidget {
             const BoxConstraints(minHeight: 20, minWidth: 20),
         suffixIcon: Padding(
           padding:
-              const EdgeInsets.only(top: 15, left: 5, right: 30, bottom: 15),
+              const EdgeInsets.only(top: 15, left: 5, right: 20, bottom: 15),
           child: SvgPicture.asset(IconConstants.search),
         ),
       ),
