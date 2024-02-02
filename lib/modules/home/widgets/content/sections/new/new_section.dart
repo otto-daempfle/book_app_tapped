@@ -1,5 +1,5 @@
 import 'package:book_app_tapped/modules/home/widgets/content/sections/new/new_book_list_tile/new_book_list_tile.dart';
-import 'package:book_app_tapped/provider/book/book_list/new_books_list_provider.dart';
+import 'package:book_app_tapped/provider/book_data/book_list/new_books_list_provider.dart';
 import 'package:book_app_tapped/utils/dialog/snack_bar.dart';
 import 'package:book_app_tapped/widgets/divider/base_divider.dart';
 import 'package:book_app_tapped/widgets/loading/base_loading_indicator.dart';

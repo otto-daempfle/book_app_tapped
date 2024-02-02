@@ -1,5 +1,5 @@
 import 'package:book_app_tapped/modules/home/widgets/content/sections/continue/continue_book_card/continue_book_card.dart';
-import 'package:book_app_tapped/provider/book/book_list/cotinue_books_list_provider.dart';
+import 'package:book_app_tapped/provider/book_data/book_list/cotinue_books_list_provider.dart';
 import 'package:book_app_tapped/utils/dialog/snack_bar.dart';
 import 'package:book_app_tapped/widgets/loading/base_loading_indicator.dart';
 import 'package:flutter/material.dart';
