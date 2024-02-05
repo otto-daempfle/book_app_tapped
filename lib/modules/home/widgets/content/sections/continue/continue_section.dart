@@ -29,7 +29,6 @@ class ContinueSectionSliver extends ConsumerWidget {
               return ListView.builder(
                 padding: const EdgeInsets.only(left: 20),
                 itemCount: books.length,
-                shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return ContinueBookCard(
